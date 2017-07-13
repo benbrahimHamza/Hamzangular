@@ -1,0 +1,26 @@
+<section id="myProjects" class="myProjects" ng-controller="ProjectCtrl">
+  <div class="container">
+    <h2>
+     My Projects
+   </h2>
+    <div class="gitProject" ng-repeat="(key, gitProject) in gitProjects">
+      <div class="row">
+        <div class="col-md-8 projectName">
+          <a href="{{gitProject.html_url}}" target="_blank">{{gitProject.name}}</a>
+        </div>
+        <div class="col-md-4 projectUpdatedAt">
+          last updated at : {{gitProject.updated_at | date : format : timezone}}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 projectFullName">
+          {{gitProject.full_name}}
+          <p class="projectDescription">{{gitProject.description ? gitProject.description : "No description yet"}}</p>
+        </div>
+        <div class="col-md-4 projectOwner">
+          author : <a href="{{gitProject.owner.html_url}}">{{gitProject.owner.login}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,79 @@
+/* Initialise heights at 100% to have a perfect one page per scroll style page */
+
+body {
+  height: 100%;
+  width: 100%;
+  color: #1d1d1d;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+.include-section {
+  min-height: 100%;
+}
+
+section {
+  text-align: center;
+  height: 100%;
+}
+
+
+/* Style navbar as to be above section so as not to add any extra height */
+
+@media(min-width:767px) {
+  .navbar {
+    color: #1d1d1d;
+    border: 0;
+    padding: 20px 0;
+    background-color: transparent;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+  }
+  .navbar-default .navbar-nav > li > a {
+    color: #1d1d1d;
+  }
+  .header {
+    margin: 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  .underOffsetNav {
+    padding: 0;
+    background-color: #1d1d1d;
+    -webkit-filter: opacity(80%) ;
+    -moz-filter: opacity(80%);
+    filter: opacity(80%);
+  }
+
+  .underOffsetLink a {
+    color: #fff!important;
+  }
+}
+
+/* Main Section */
+#mainContent{
+  padding-top: 150px;
+  color: #fff;
+}
+
+/* Presentation Section */
+
+#presentationContent {
+  background-color: blue;
+}
+
+
+/* MyProjects Section */
+
+#myProjects {
+  background-color: red;
+}
+
+.gitProject {
+  text-align: left;
+}

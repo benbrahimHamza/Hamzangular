@@ -1,0 +1,15 @@
+<section id="presentationContent" class="presentationContent" ng-controller="PresentationCtrl">
+  <div class="container">
+    <img src="{{gitUser.avatar_url}}" class="userImg" />
+    <p>
+      {{gitUser.name}}
+    </p>
+    <p>
+      Currently living in <a href="https://www.google.com/maps/place/{{gitUser.location | googleMapificate}}" target='_blank'> {{gitUser.location}} </a>
+    </p>
+    <p>
+      {{gitUser.bio}}
+    </p>
+    <p><a class="btn btn-lg btn-success" ng-href="#/">My Projects <br> <span class="glyphicon glyphicon-chevron-down"></span></a></p>
+  </div>
+</section>
