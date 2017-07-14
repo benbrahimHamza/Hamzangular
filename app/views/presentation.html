@@ -1,15 +1,18 @@
 <section id="presentationContent" class="presentationContent" ng-controller="PresentationCtrl">
   <div class="container">
-    <img src="{{gitUser.avatar_url}}" class="userImg" />
-    <p>
+    <h2> Who am I ? </h2>
+    <img src="{{gitUser.avatar_url}}" class="userImg img-circle" />
+    <p id="userName">
       {{gitUser.name}}
     </p>
-    <p>
+    <p id="userLocation">
       Currently living in <a href="https://www.google.com/maps/place/{{gitUser.location | googleMapificate}}" target='_blank'> {{gitUser.location}} </a>
     </p>
-    <p>
+    <p id="userBio">
       {{gitUser.bio}}
     </p>
-    <p><a class="btn btn-lg btn-success" ng-href="#/">My Projects <br> <span class="glyphicon glyphicon-chevron-down"></span></a></p>
+    <div class="btn-next">
+      <a du-smooth-scroll href="#includeProject">My Projects <br> <span class="glyphicon glyphicon-chevron-down"></span></a>
+    </div>
   </div>
 </section>

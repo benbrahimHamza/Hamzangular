@@ -20,22 +20,53 @@ section {
   height: 100%;
 }
 
+/* General styles */
+
+.btn-next{
+  padding: 50px 0px 50px 0px;
+}
+
+.btn-next a{
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  padding: 50px 0px 50px 0px;
+}
+
+.btn-next a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+
 
 /* Style navbar as to be above section so as not to add any extra height */
 
 @media(min-width:767px) {
   .navbar {
-    color: #1d1d1d;
     border: 0;
     padding: 20px 0;
-    background-color: transparent;
-    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
-    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
-    transition: background .5s ease-in-out, padding .5s ease-in-out;
+    background-color: #1d1d1d;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: .5s ease-in-out, padding .5s ease-in-out;
+    transition: .5s ease-in-out, padding .5s ease-in-out;
   }
   .navbar-default .navbar-nav > li > a {
-    color: #1d1d1d;
+    color: #fff;
+    font-weight: bold;
+    padding-right: 25px;
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
   }
+
+  .navbar-default .navbar-nav > li > a:hover {
+    color: #f4645f;
+  }
+
   .header {
     margin: 0px;
     position: absolute;
@@ -43,37 +74,113 @@ section {
     width: 100%;
   }
   .underOffsetNav {
-    padding: 0;
-    background-color: #1d1d1d;
-    -webkit-filter: opacity(80%) ;
-    -moz-filter: opacity(80%);
-    filter: opacity(80%);
-  }
-
-  .underOffsetLink a {
-    color: #fff!important;
+    -webkit-transform: translateY(0%);
+    -moz-transform: translateY(0%);
+    transform: translateY(0%);
   }
 }
 
 /* Main Section */
+#includeMain {
+  background: #1d1d1d url("/images/splash.jpg") no-repeat;
+  background-size: cover;
+}
+
 #mainContent{
-  padding-top: 150px;
+  padding-top: 250px;
   color: #fff;
 }
 
 /* Presentation Section */
-
-#presentationContent {
-  background-color: blue;
+#includePresentation {
+  padding-top: 100px;
 }
 
+#presentationContent div > .btn-next a{
+  color: #1d1d1d;
+}
+
+.userImg{
+  max-width: 250px;
+  -webkit-transition: .5s ease-in-out, padding .5s ease-in-out;
+  -moz-transition: .5s ease-in-out, padding .5s ease-in-out;
+  transition: .5s ease-in-out, padding .5s ease-in-out;
+}
+
+.userImg:hover {
+  -webkit-transform: translate(-3%, -3%);
+  -moz-transform: translate(-3%, -3%);
+  transform: translate(-3%, -3%);
+  box-shadow: 0 6px 12px 0px rgba(0, 0, 0, 0.4);
+}
 
 /* MyProjects Section */
-
-#myProjects {
-  background-color: red;
+#includeProject {
+  background-color: #1d1d1d;
+  color: #fff;
+  padding: 30px 0px 30px 0px;
 }
 
 .gitProject {
+  padding-top: 15px;
   text-align: left;
+}
+
+.projectName a{
+  color:#f4645f;
+  font-size: 16px;
+  font-weight: bold;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.projectName a:hover{
+  color: #fff;
+  text-decoration: none;
+}
+
+.projectFullName {
+  font-size: 10px;
+}
+
+.projectDescription {
+  padding-top: 2px;
+  font-size: 14px;
+}
+
+.projectUpdatedAt{
+  font-size: 12px;
+}
+
+.projectOwner {
+  font-size: 12px;
+}
+
+.projectOwner a{
+  font-size: 12px;
+  color: #f4645f;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.projectOwner a:hover{
+  color:#fff;
+  text-decoration: none;
+}
+
+hr {
+  height: 15px;
+  width: 70%;
+  border-style: solid;
+  border-color: #fff;
+  border-width: 1px 0 0 0;
+}
+
+footer{
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 50px 0px 50px 0px;
+  text-align: center;
 }

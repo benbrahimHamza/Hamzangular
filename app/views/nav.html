@@ -1,0 +1,24 @@
+<div id="nav" class="header" ng-controller="NavCtrl">
+  <div class="navbar navbar-default navbar-fixed-top" ng-class="{underOffsetNav : scrollPos >=50}" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        <a class="navbar-brand" href="#/">{{titles[0]}}</a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="js-navbar-collapse">
+        <ul class="nav navbar-nav" ng-class="{underOffsetLink : scrollPos >=50}">
+          <li><a du-smooth-scroll href="#includeMain">Back to top</a></li>
+          <li><a du-smooth-scroll href="#includePresentation">Presentation</a></li>
+          <li><a du-smooth-scroll href="#includeProject">Projects</a></li>
+          <li><a du-smooth-scroll href="#includeDemos">Demos</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
