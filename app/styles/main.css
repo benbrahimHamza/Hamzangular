@@ -184,3 +184,33 @@ footer{
   padding: 50px 0px 50px 0px;
   text-align: center;
 }
+
+.socialMediaImg img{
+  width: 80px;
+  padding: 0px 10px 10px 10px;
+  -webkit-transition: .3s ease-in-out;
+  -moz-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.socialMediaImg img:hover{
+  width: 90px;
+}
+
+.socialMediaImg:hover{
+  text-decoration: none;
+}
+
+#sendMail{
+  font-weight: 500;
+  color: #fff;
+  -webkit-transition: .5s ease-in-out;
+  -moz-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+#sendMail:hover{
+  color: #f4645f;
+  text-decoration: none;
+  font-size: 15px;
+}
